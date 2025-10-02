@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marlop Ópticas - Atención profesional en salud visual con varias sucursales en México. Contáctanos por WhatsApp, correo o redes sociales.">
+  <title>Marlop Ópticas</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Google Fonts: Cinzel -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background: #000000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #D4AF37;
+    }
+
+    /* 🔹 Animación fade-in desde abajo escalonada */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .fade-in.logo { animation-delay: 0.2s; }
+    .fade-in.slogan { animation-delay: 0.7s; }
+    .fade-in.title { animation-delay: 1.2s; }
+    .fade-in.buttons { animation-delay: 1.7s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header {
+      margin-top: 20px;
+    }
+
+    header img {
+      max-width: 280px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    header p {
+      color: #D4AF37;
+      font-size: 18px;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 20px 0;
+      color: #D4AF37;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin: 20px;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #D4AF37;
+      background: #000000;
+      border: 2px solid #D4AF37;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 2px 2px 6px rgba(212, 175, 55, 0.4);
+      transition: all 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+
+    .button:hover {
+      background: #D4AF37;
+      color: #000000;
+      transform: scale(1.05);
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      font-size: 14px;
+      color: #D4AF37;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logotipo de Marlop Ópticas" class="fade-in logo">
+    <p class="fade-in slogan">SALUD Y CALIDAD VISUAL A TU ALCANCE</p>
+  </header>
+
+  <main>
+    <h1 class="fade-in title">Bienvenido</h1>
+
+    <nav class="button-container fade-in buttons">
+      <a href="https://wa.me/525575176938" class="button" target="_blank" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="mailto:marlopticas10@gmail.com" class="button" aria-label="Enviar un correo"><i class="fas fa-envelope"></i> Correo</a>
+      <a href="https://maps.app.goo.gl/SfHBTag8oeL7PSWM7" class="button" target="_blank" aria-label="Ver ubicación 1 en Google Maps"><i class="fas fa-map-marker-alt"></i> Ubicación 1</a>
+      <a href="https://maps.app.goo.gl/62F37APbMPpu1UEg9" class="button" target="_blank" aria-label="Ver ubicación 2 en Google Maps"><i class="fas fa-map-marker-alt"></i> Ubicación 2</a>
+      <a href="https://maps.app.goo.gl/tkQPUjtS7mRXY9UNA" class="button" target="_blank" aria-label="Ver ubicación 3 en Google Maps"><i class="fas fa-map-marker-alt"></i> Ubicación 3</a>
+      <a href="https://www.instagram.com/marlop_optica?igsh=MWN2NDBybHh4amphMQ==" class="button" target="_blank" aria-label="Visitar Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/share/171hXZ9AvF/" class="button" target="_blank" aria-label="Visitar Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.tiktok.com/@jose.raul.meza.en?_t=ZS-90C2NfEItoP&_r=1" class="button" target="_blank" aria-label="Visitar TikTok"><i class="fab fa-tiktok"></i> TikTok</a>
+    </nav>
+  </main>
+
+  <footer>
+    © 2025 Marlop Ópticas
+  </footer>
+</body>
+</html>
